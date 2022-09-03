@@ -1,0 +1,44 @@
+@import 'variables.scss';
+
+.o-body-container {
+  padding: 0 1rem;
+
+  @media (min-width: $lg) {
+    max-width: 128rem;
+    margin: 0 auto;
+    padding: initial;
+  }
+
+  @media (min-width: $lg) and (max-width: 1311px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  &--full {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  &--padded {
+
+    @media (min-width: 1280px) {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: initial;
+      box-sizing: border-box;
+    }
+
+    @media (min-width: $lg) and (max-width: 1311px) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    @media (min-width: 1380px) {
+      max-width: 138rem;
+      margin: 0 auto;
+      padding-left: 5rem;
+      padding-right: 5rem;
+      box-sizing: border-box;
+    }
+  }
+}

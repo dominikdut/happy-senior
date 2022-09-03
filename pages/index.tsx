@@ -1,16 +1,16 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 import { Navigation } from "../components/Navigation/Navigation.component";
 import React from "react";
+import { Main } from "../components/Main/Main.component";
+import {FooterComponent} from "../components/Footer/Footer.component";
 
 const Home: NextPage = () => {
     return (
-        <div className={styles.container}>
-
+        <>
             <Navigation />
-        </div>
+            <Main />
+            <FooterComponent />
+        </>
     )
 }
 

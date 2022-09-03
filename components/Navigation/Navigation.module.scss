@@ -1,3 +1,38 @@
-.test {
-  background: red;
+@import "styles/variables";
+
+.navigation__container {
+  box-shadow: 0 8px 8px -8px $basic-color;
+  height: 7rem;
+}
+
+.navigation__header {
+  display: grid;
+  grid-template-columns: 10rem 1fr 1fr;
+  align-items: center;
+  height: 7rem;
+}
+
+.navigation__logo {
+  width: 100%;
+  height: 100%;
+}
+
+.navigation__logo__container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__svg {
+  height: 5rem;
+  width: 5rem;
+  fill: $super-light-gray;
+}
+
+.navigation__links {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 2rem;
+  font-size: 1.8rem;
+  justify-content: end;
+  align-items: center;
 }

@@ -5,6 +5,16 @@ html {
   font-family: $font-family;
 }
 
+h1, h2, h3, h4, h5, p {
+  font-family: $font-family;
+}
+
+h1, h2 {
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
 body {
   font-size: 1.4rem;
   width: 100vw;

@@ -1,11 +1,14 @@
 // Fonts:
-$font-family-fallback: 'Lato-polyfill', 'Constantia';
-$font-family: 'Lato', $font-family-fallback;
+$font-family: 'Open Sans Light', 'Open Sans', sans-serif;
 
 $sm: 360px;
 $md: 768px;
 $lg: 1280px;
 $hd: 1920px;
 
+$super-light-gray: #D6D6D6;
 $dark-gray: #2E353B;
 $basic-font-color: $dark-gray;
+
+$basic-color: #4ECCA3;
+$white: #fff;
