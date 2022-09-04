@@ -1,8 +1,12 @@
 import styles from './AboutCompany.module.scss'
+import {useContext} from "react";
+import AppContext from "../../infrastruture/appContext";
 
 export const AboutCompanyComponent = (props) => {
+    const { aboutCompany } = useContext(AppContext);
+
     return (
-        <div className={styles.aboutCompany__wrapper}>
+        <div ref={aboutCompany} className={styles.aboutCompany__wrapper}>
             <div className={styles.aboutCompany__container}>
                 <h2>O FIRMIE</h2>
                 <svg className={styles.aboutCompany__photo} version="1.1" id="unavailable-photo-svg" xmlns="http://www.w3.org/2000/svg"

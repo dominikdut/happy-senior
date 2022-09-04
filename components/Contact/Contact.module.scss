@@ -1,14 +1,18 @@
 @import "styles/variables";
 
-.contact__wrapper {
-  padding: 3rem;
-}
-
 .contact__container {
   display: grid;
   justify-items: center;
   align-items: center;
-  grid-row-gap: 1rem;
+  grid-row-gap: 2rem;
   font-size: 1.6rem;
   color: $white;
+}
+
+.contact__iframe {
+  width: 100%;
+
+  @media (min-width: $lg) {
+    width: 80%;
+  }
 }

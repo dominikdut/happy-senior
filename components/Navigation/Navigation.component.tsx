@@ -1,6 +1,17 @@
 import styles from './Navigation.module.scss'
+import { useContext } from "react";
+import AppContext from "../../infrastruture/appContext";
 
 export const Navigation = (props) => {
+    const { contact, aboutCompany } = useContext(AppContext);
+    const scrollToSection = (element) => {
+        window.scrollTo({
+            top: element.current.offsetTop,
+            behavior: 'smooth',
+
+        });
+    };
+
     return (
         <nav className={styles.navigation__container}>
             <div className={`o-body-container`}>
@@ -32,8 +43,8 @@ export const Navigation = (props) => {
                     </div>
                     <h1>Happy Senior</h1>
                     <div className={styles.navigation__links}>
-                        <a>O FIRMIE</a>
-                        <a>KONTAKT</a>
+                        <div onClick={() => scrollToSection(aboutCompany)}>O FIRMIE</div>
+                        <div onClick={() => scrollToSection(contact)}>KONTAKT</div>
                     </div>
                 </div>
             </div>

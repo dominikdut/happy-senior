@@ -18,7 +18,9 @@ export const Main = (props) => {
                 <AboutCompanyComponent />
             </div>
             <div className={styles.main__content}>
-                <ContactComponent />
+                <div className={`o-body-container`}>
+                    <ContactComponent />
+                </div>
             </div>
         </main>
     )
