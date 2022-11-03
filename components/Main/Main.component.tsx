@@ -5,7 +5,7 @@ import {ContactComponent} from "../Contact/Contact.component";
 export const Main = (props) => {
     return (
         <main className={styles.main}>
-           <img className={styles.image} src={`https://www.westend61.de/images/0001141513pw/young-nurse-serving-food-and-drink-to-elderly-people-at-table-in-nursing-home-MASF11166.jpg`} />
+           <img className={styles.image} src={``} />
             <div className={styles.main__content}>
                 <div className={`o-body-container`}>
                     <div className={styles.slogan}>
